@@ -1,0 +1,99 @@
+.team
+
+    &__group
+        
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        +laptop
+            justify-content: space-between
+      
+
+    &__photo_wrap
+        
+        z-index: 3   
+        width: rem(263px)
+        margin-bottom: rem(60px)
+        +phone
+            margin-right: 1%
+        &:last-child
+            margin-right: 0
+            margin-bottom: 0
+
+    &__photo
+        
+        background-size: cover
+        width: 100%
+        height: rem(300px)
+        background: #ccc no-repeat
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__photo.first 
+        background: url(../img/team1.jpg) no-repeat 
+    &__photo.second 
+        background: url(../img/team2.jpg) no-repeat
+    &__photo.third
+        background: url(../img/team3.jpg) no-repeat
+    &__photo.fourth
+        background: url(../img/team2.jpg) no-repeat
+
+    &__social_group
+        transition: linear 0.5s
+        width: 100%
+        height: rem(300px)
+        display: flex
+        align-items: center
+        justify-content: center
+    
+    
+    &__photo_social
+        transition: linear 0.5s
+        opacity: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: rem(2px)
+        width: rem(50px)
+        height: rem(50px)
+        background: #3a454d
+        color: #ffffff
+
+    &__photo_social:hover
+        background: #4e5a62
+        
+    
+        
+    
+    &__name_wrap
+        transition: linear 0.5s
+        padding: rem(20px) 0
+        margin: 0 auto
+        width: 100%
+        background: #e1e6ea
+    
+
+    &__name
+        margin-left: rem(20px)
+        display: block
+        color: $titleColor
+        text-transform: uppercase
+    
+    &__position
+        display: block
+        margin-top: rem(5px)
+        margin-left: rem(20px)
+        color: $subtitleColor
+
+    
+    &__photo_wrap:hover .team__social_group
+        background: rgba(#ccc, 0.4)
+    &__photo_wrap:hover .team__photo_social
+        opacity: 1
+    &__photo_wrap:hover .team__name_wrap
+        background: #3a454d
+    &__photo_wrap:hover .team__name 
+        color: #fff 
+    &__photo_wrap:hover .team__position
+        color: #fff 

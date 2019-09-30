@@ -1,0 +1,99 @@
+.banner	
+	position: relative
+	background: url(../img/pic.jpg)
+	min-height: calc(100vh - 75px)
+	background-size: cover
+	display: flex
+	flex-direction: column
+	justify-content: center	
+	text-align: center
+	z-index: 0
+	padding: rem(20px) 0
+	box-sizing: border-box
+	+overlay($darkerColor)		
+	+tablet
+		text-align: left
+	&__title
+		font-size: rem(32px)
+		text-transform: uppercase
+		color: $WhiteColor
+		+tablet
+			font-size: rem(36px)
+	
+	&__subtitle
+		font-weight: 200
+		margin-top: rem(35px)
+		font-size: rem(18px)
+		color: $subtitleColor
+		+tablet
+			width: 55%
+	
+			
+
+	&__btn
+		margin-top: rem(30px)
+		text-transform: uppercase
+		color: #fff
+		padding: rem(17px)
+		width: 100%
+		border: 2px solid #fff
+		border-radius: rem(5px)
+		background: none
+		transition: 0.5s
+		box-sizing: border-box
+		&:hover
+			background: $mainColor
+			border: 2px solid transparent
+		
+		+phone
+			margin-right: rem(10px)
+			width: 30%
+		+tablet
+			width: 20%
+
+		+laptop
+			width: 15%
+.dot-container
+	padding: 0 rem(15px)
+	position: relative
+.dot-list
+	display: none
+	+tablet
+		display: block
+		position: absolute
+		top: rem(-40px)
+		right: rem(15px)
+.dot
+	display: inline-block
+	cursor: pointer
+	width: rem(13px)
+	height: rem(13px)
+	border: 2px solid #fff
+	border-radius: 50%
+	box-sizing: border-box
+	margin-left: rem(9px)
+	transition: 0.3s
+
+
+.active, .dot:hover
+	background: $WhiteColor
+
+.mySlides
+	transition: 0.5s
+	display: none
+
+.fade
+	animation-name: fade
+	animation-duration: 0.5s
+
+@-webkit-keyframes fade
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+@keyframes fade
+	from
+		opacity: 0.4
+	to
+		opacity: 1

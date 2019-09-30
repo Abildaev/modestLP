@@ -1,0 +1,32 @@
+.services
+
+    &__group
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        +tablet
+            justify-content: space-between
+
+    &__item
+        width: 80%
+        text-align: center
+        margin: 0 
+        padding: 0
+        +tablet
+            width: 45%
+        +laptop
+            width: 22%
+
+    &__title
+        font-weight: 400
+        margin-top: rem(35px)
+        margin-bottom: rem(30px)
+        font-size: rem(17px)
+        text-transform: uppercase
+        color: $titleColor
+    &__subtitle
+        font-weight: 200
+        line-height: rem(26px)
+        font-size: rem(17px)
+        color: $subtitleColor
+        margin-bottom: rem(90px)

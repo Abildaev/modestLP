@@ -1,0 +1,65 @@
+html, body
+	margin: 0
+	padding: 0
+	width: 100%
+	height: 100%
+	font-family: $firstFont
+	font-weight: 200
+
+h1,h2,h3,h4
+	font-weight: 400
+	margin: 0
+
+a 
+	text-decoration: none
+
+ul 
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+.container
+	padding: 0 rem(15px) 
+	margin: 0 auto
+	max-width: $width
+
+.flex-container
+	display: flex
+	justify-content: space-between
+
+.wrapper
+	position: relative
+	overflow: hidden
+	min-height: 100%
+
+.hr
+	background: #dde1e4
+	width: 100%
+	height: rem(1px)
+	margin-top: rem(100px)
+	margin-bottom: rem(80px)
+
+.headline
+	margin-top: rem(80px)
+	font-size: rem(32px)
+	text-transform: uppercase
+	display: flex
+	color: $titleColor
+	margin-bottom: rem(60px)
+	+tablet
+		font-size: rem(36px)
+
+.headline.dark
+	margin-top: 0
+	color: $WhiteColor
+
+
+.border
+	width: rem(10px)
+	height: rem(35px)
+	background: #e1e6ea
+	margin-right: rem(15px)
+
+.border.another
+	background: #4e5a62
+	

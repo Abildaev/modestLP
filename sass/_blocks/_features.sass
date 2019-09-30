@@ -1,0 +1,51 @@
+.features
+    margin-top: rem(70px)
+    width: 100%
+    padding: rem(85px) 0 rem(120px) 
+    background: $darkerColor
+
+    &__group
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        +laptop
+            justify-content: space-between
+
+    &__item  
+        width: 100%
+        max-width: rem(363px)
+        padding: 0
+        margin: 0 0 rem(60px)
+        +laptop
+            width: 32%
+            margin: 0
+
+    &__item:last-child
+        margin: 0
+    
+    &__photo
+        width: 100%
+        height: rem(242px)
+    &__photo.features__first
+        background: url(../img/feauter1.jpg) no-repeat
+    &__photo.features__second
+        background: url(../img/feauter2.jpg) no-repeat
+    &__photo.features__third
+        background: url(../img/feauter3.jpg) no-repeat
+
+    &__title
+        font-weight: 200
+        margin-top: rem(50px)
+        color: #fff
+        font-size: rem(18px)
+        text-transform: uppercase
+
+    &__subtitle
+        font-weight: 200
+        width: 100%
+        max-width: rem(363px)
+        line-height: rem(26px)
+        margin-top: rem(25px)
+        width: 100%
+        color: #ffffff
+        font-size: rem(18px)

@@ -1,0 +1,96 @@
+.map
+    display: none
+    +laptop
+        display: block
+    
+.contact
+    &__group
+        +laptop
+            display: flex
+            flex-direction: row-reverse
+            justify-content: space-between
+    &__form    
+        box-sizing: border-box   
+        width: 100%
+        background: $WhiteColor
+        +tablet
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            width: 100%
+        +laptop
+            position: relative
+            top: rem(-140px)
+            margin-left: auto
+            width: 48%
+            padding: rem(30px)
+
+    &__label
+        font-weight: 200
+        font-size: rem(14px)
+        width: 100%
+        display: block
+        text-transform: uppercase
+        color: $subtitleColor
+        margin-bottom: rem(8px)
+        +tablet
+            width: 48%
+    &__label.contact__label_message
+        +tablet
+            width: 100%
+
+    &__form_input
+        display: block
+        width: 100%
+        box-sizing: border-box
+        margin-top: rem(8px)
+        margin-bottom: rem(25px) 
+        padding: rem(15px) rem(15px)
+        border: 0px solid
+        border-radius: rem(5px)
+        background: #eaeef1
+   
+    &__form_message
+        resize: none
+        min-height: 30vh
+        +laptop
+            min-height: rem(160px)
+
+    &__btn
+        font-size: rem(14px)
+        border: 0px solid
+        border-radius: rem(5px)
+        padding: rem(15px)
+        text-transform: uppercase
+        width: 100%
+        color: $WhiteColor
+        background: $mainColor
+        transition: 0.5s
+        +tablet
+            margin: 0 auto
+            width: 50%
+        +laptop
+            margin: 0
+            width: 35%
+
+    &__btn:hover
+        background: $darkerColor
+
+    &__info
+        margin-top: rem(55px)
+        +laptop
+            width: 46%
+    &__info_title 
+        color: $titleColor
+        font-size: rem(20px)
+        text-transform: uppercase
+    
+    &__info_subtitle
+        font-weight: 200
+        margin-top: rem(35px)
+        color: $subtitleColor
+        line-height: rem(26px)
+
+
+    
+

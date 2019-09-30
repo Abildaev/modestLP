@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'IcoMoon-Free';
+  src:  url('fonts/IcoMoon-Free.eot?7juzh');
+  src:  url('fonts/IcoMoon-Free.eot?7juzh#iefix') format('embedded-opentype'),
+    url('fonts/IcoMoon-Free.ttf?7juzh') format('truetype'),
+    url('fonts/IcoMoon-Free.woff?7juzh') format('woff'),
+    url('fonts/IcoMoon-Free.svg?7juzh#IcoMoon-Free') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'IcoMoon-Free' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil2:before {
+  content: "\e906";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-cogs:before {
+  content: "\e995";
+}

@@ -1,0 +1,91 @@
+.about
+    
+    &__firstBlock
+        +laptop
+            width: p(650px)
+    
+    &__secondBlock
+        +laptop
+            width: p(450px)
+
+    &__blocks
+        +laptop 
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+    
+    &__paraph
+        font-weight: 200
+        color: $subtitleColor
+        margin-bottom: rem(40px)
+        line-height: rem(26px)
+        +tablet
+            font-size: rem(18px)
+
+    &__social
+        margin-top: rem(55px)
+        display: flex
+        flex-wrap: wrap
+
+    &__link_social
+        width: 19.5%
+        height: rem(60px)
+        color: #fff
+        margin-right: 0.5%
+        +phone
+            width: rem(60px)
+            margin-right: rem(1px)
+
+    &__link_wrap
+        width: 100%
+        height: 100%
+        background: #c8cdd0
+        display: flex
+        justify-content: center
+        align-items: center
+    
+    &__link_wrap
+        &:hover
+            background: #d0d5d9
+    
+    &__process
+        margin-top: rem(60px)
+        +laptop
+            display: flex
+            margin-top: rem(30px)
+            &:first-child
+                margin-top: 0
+
+    &__process_number
+        width: rem(50px)
+        height: rem(50px)
+        display: flex
+        justify-content: center
+        align-items: center
+        background: $mainColor
+        color: $WhiteColor
+        font-size: rem(20px)
+        margin-right: 5%
+        
+    &__process_text
+        +phone
+            width: 85%
+
+
+    &__process_title
+        margin-top: rem(20px)
+        font-size: rem(18px)
+        text-transform: uppercase
+        color: $titleColor
+        +laptop
+            margin-top: 0
+        
+    
+    &__process_subtitle
+        font-weight: 200
+        line-height: rem(26px)
+        color: $subtitleColor
+        margin-top: rem(10px)
+        
+
+        
